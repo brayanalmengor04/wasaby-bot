@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/github/avatar/avatar-wasabi.png" alt="Wasabi Bot Logo" width="200" height="200"/>
+  <img src="./src/assets/github/avatar/avatar-wasabi.png" alt="Wasabi Bot Logo" width="200" height="200"/>
   
   # 🤖 WASABI BOT
   
