@@ -1,0 +1,34 @@
+server:
+  port: 2333
+
+lavalink:
+  plugins:
+    # Install the official YouTube source plugin (v1.16.0)
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.16.0"
+      repository: "https://maven.lavalink.dev/releases"
+  
+  server:
+    password: "123456"
+    sources:
+      # IMPORTANT: Disable the built-in (deprecated) YouTube source
+      youtube: false
+      bandcamp: true
+      soundcloud: true
+      twitch: true
+      vimeo: true
+      http: true
+      local: false
+
+# Configure the YouTube source plugin
+plugins:
+  youtube:
+    enabled: true
+    allowSearch: true
+    allowDirectVideoIds: true
+    allowDirectPlaylistIds: true
+    # Multiple clients for fallback resilience
+    clients:
+      - MUSIC          # Best for ytmsearch, returns Opus (no transcoding)
+      - ANDROID_VR     # Good fallback
+      - WEB            # Standard web client
+      - WEBEMBEDDED    # For embedded content

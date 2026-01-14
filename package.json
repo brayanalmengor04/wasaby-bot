@@ -1,7 +1,17 @@
 {
   "dependencies": {
+    "@discordjs/opus": "^0.10.0",
+    "@discordjs/voice": "^0.19.0",
     "discord.js": "^14.25.1",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "fs-minipass": "^3.0.3",
+    "kazagumo": "^3.4.0",
+    "libsodium-wrappers": "^0.8.0",
+    "minipass": "^7.1.2",
+    "shoukaku": "^4.2.0"
+  },
+  "scripts": {
+    "lavalink": "cd src/lavalink && java -jar LavaLink.jar"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"

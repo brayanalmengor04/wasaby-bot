@@ -3,11 +3,20 @@ const fs = require("fs");
 const path = require("path");
 const { token } = require("./config/config");
 
+const kazagumoManager = require("./managers/KazagumoManager");
+
+const Nodes = [{
+    name: 'WasabyNode',
+    url: 'localhost:2333',
+    auth: '123456'
+}];
+
 const client = new Client({
-    intents: [GatewayIntentBits.Guilds],
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates],
 });
 
 client.commands = new Collection();
+kazagumoManager.initialize(client, Nodes);
 
 /* Cargar comandos */
 const commandsPath = path.join(__dirname, "commands");
@@ -17,7 +26,6 @@ for (const file of commandFiles) {
     const command = require(path.join(commandsPath, file));
     client.commands.set(command.data.name, command);
 }
-
 /* Cargar eventos */
 const eventsPath = path.join(__dirname, "events");
 const eventFiles = fs.readdirSync(eventsPath).filter(f => f.endsWith(".js"));
