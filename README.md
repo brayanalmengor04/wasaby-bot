@@ -1,55 +1,83 @@
 <div align="center">
-  <img src="./src/assets/github/avatar/avatar-wasabi.png" alt="Wasabi Bot Logo" width="200" height="200"/>
-  
-  # 🤖 WASABI BOT
-  
-  ### Bot Multi-funcional para Discord
-  
-  [![Discord.js](https://img.shields.io/badge/discord.js-v14-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.js.org/)
-  [![Node.js](https://img.shields.io/badge/Node.js-v18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-  [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
-  [![Status](https://img.shields.io/badge/Status-En%20Desarrollo-orange?style=for-the-badge)](https://github.com)
-  
-  <p align="center">
-    <a href="#-características">Características</a> •
-    <a href="#-instalación">Instalación</a> •
-    <a href="#-comandos">Comandos</a> •
-    <a href="#-estructura">Estructura</a> •
-    <a href="#-tecnologías">Tecnologías</a>
-  </p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./src/assets/github/avatar/avatar-wasabi.png">
+  <source media="(prefers-color-scheme: light)" srcset="./src/assets/github/avatar/avatar-wasabi.png">
+  <img alt="Wasaby Bot" src="./src/assets/github/avatar/avatar-wasabi.png" width="180" height="180" style="border-radius: 50%; box-shadow: 0 8px 32px rgba(88, 101, 242, 0.3);">
+</picture>
+
+# � WASABY BOT
+
+<p align="center">
+  <b>Tu compañero definitivo para Discord</b><br>
+  Música de alta calidad • Herramientas poderosas • Experiencia premium
+</p>
+
+<br>
+
+[![Discord.js](https://img.shields.io/badge/Discord.js-v14-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.js.org)
+[![Node.js](https://img.shields.io/badge/Node.js-v18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
+[![Lavalink](https://img.shields.io/badge/Lavalink-4.0-FB542B?style=for-the-badge&logo=soundcloud&logoColor=white)](https://lavalink.dev)
+
+<br>
+
+![Version](https://img.shields.io/badge/version-1.0.0-00D9FF?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-FFD700?style=flat-square)
+![Status](https://img.shields.io/badge/status-active-00E676?style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/brayanalmengor04/wasaby-bot?style=flat-square&color=FF6B9D)
+
+<br>
+
+<p align="center">
+  <a href="#-acerca-del-proyecto">Acerca de</a> •
+  <a href="#-características">✨ Características</a> •
+  <a href="#-inicio-rápido"> Inicio Rápido</a> •
+  <a href="#-comandos">Comandos</a> •
+  <a href="#-roadmap">Roadmap</a>
+</p>
+
 </div>
+
+<br>
 
 ---
 
-## 📝 Descripción
+<br>
 
-**WASABI** es un bot multi-funcional para Discord desarrollado con **Node.js** y **discord.js**. Diseñado con una arquitectura modular y escalable, ofrece funcionalidades de moderación, utilidades y sistemas avanzados. Este proyecto nace como una iniciativa de aprendizaje personal, aplicando buenas prácticas de desarrollo backend y sirviendo como pieza clave de mi portafolio profesional.
+## � Acerca del Proyecto
 
-## ✨ Características
+> **Wasaby Bot** es un bot de Discord de nueva generación que combina potencia, elegancia y simplicidad. Diseñado desde cero con tecnologías modernas, ofrece una experiencia de audio superior gracias a **Lavalink**, una arquitectura robusta con **Discord.js v14**, y una interfaz de usuario intuitiva.
 
-- 🛡️ **Sistema de Moderación** - Gestión completa de servidores con comandos de administración
-- 🎮 **Comandos de Utilidad** - Herramientas útiles para mejorar la experiencia del servidor
-- 📊 **Sistema de Logs** - Registro detallado de eventos y acciones
-- ⚙️ **Configuración Flexible** - Personalización por servidor mediante archivos de configuración
-- 🔄 **Handler de Comandos** - Sistema modular para fácil escalabilidad
-- 🎨 **Embeds Personalizados** - Mensajes visuales atractivos y coherentes
-- 📱 **Slash Commands** - Compatibilidad total con comandos de barra de Discord
-- 🔐 **Sistema de Permisos** - Control granular de acceso a funcionalidades
+### ⚡ ¿Por qué Wasaby?
 
-## 🚀 Instalación
+- **🎵 Audio de Calidad Studio** - Reproduce música sin pérdida de calidad desde YouTube, Spotify y SoundCloud
+- **⚙️ Arquitectura Moderna** - Código limpio, modular y escalable, fácil de mantener y extender
+- **🛡️ Confiable y Estable** - Sistema robusto de manejo de errores y reconexión automática
+- **🎨 Interfaz Premium** - Embeds elegantes y controles interactivos para una UX superior
+- **📊 Rendimiento Optimizado** - Consumo mínimo de recursos, máxima eficiencia
 
-### Prerrequisitos
+<br>
 
-- Node.js v18 o superior
-- npm o yarn
-- Una aplicación de Discord Bot ([Crear aquí](https://discord.com/developers/applications))
+---
 
-### Pasos de Instalación
+<br>
+
+## � Inicio Rápido
+
+### 📋 Prerrequisitos
+
+Antes de comenzar, asegúrate de tener instalado:
+
+- **Node.js** v18.0.0 o superior
+- **Java JDK** 17 o superior (para Lavalink)
+- **npm** o **yarn**
+
+### � Instalación
 
 1. **Clona el repositorio**
    ```bash
-   git clone https://github.com/brayanalmengor04/wasaby-bot
-   cd wasabi-bot
+   git clone https://github.com/brayanalmengor04/wasaby-bot.git
+   cd wasaby-bot
    ```
 
 2. **Instala las dependencias**
@@ -61,88 +89,201 @@
    
    Crea un archivo `.env` en la raíz del proyecto:
    ```env
-   DISCORD_TOKEN=tu_token_aqui
-   CLIENT_ID=tu_client_id_aqui
-   GUILD_ID=tu_guild_id_aqui
+   DISCORD_TOKEN=tu_token_de_discord
+   CLIENT_ID=tu_client_id
+   GUILD_ID=tu_guild_id_opcional
    ```
 
-4. **Inicia el bot**
+### 🎮 Ejecución
 
+Wasaby Bot requiere **tres pasos** para una ejecución completa:
 
+#### 1️⃣ Inicia el servidor Lavalink
+```bash
+npm run lavalink
+```
+> **Nota:** Este comando debe ejecutarse primero y mantenerse activo. Lavalink es el motor de audio que potencia el sistema de música.
 
-## 📦 Comandos
+#### 2️⃣ Registra los comandos slash
+```bash
+node src/dploy-commands.js
+```
+> **Nota:** Ejecuta esto una sola vez o cada vez que agregues/modifiques comandos. Evita la duplicación de comandos en Discord.
 
-### Moderación Implementando
-| Comando | Descripción | Uso |
-|---------|-------------|-----|
-| `/ban` | Banea a un usuario del servidor | `/ban @usuario [razón]` |
-| `/kick` | Expulsa a un usuario del servidor | `/kick @usuario [razón]` |
-| `/clear` | Elimina mensajes en masa | `/clear [cantidad]` |
-| `/mute` | Silencia a un usuario | `/mute @usuario [duración]` |
+#### 3️⃣ Inicia el bot
+```bash
+node src/bot/bot.js
+```
+> **Nota:** Este es el punto de entrada principal. Requiere que Lavalink esté activo.
 
-### Utilidades
-| Comando | Descripción | Uso |
-|---------|-------------|-----|
-| `/ping` | Muestra la latencia del bot | `/ping` |
-| `/serverinfo` | Información del servidor | `/serverinfo` |
-| `/userinfo` | Información de un usuario | `/userinfo [@usuario]` |
-| `/music play <nombre de la cancion>` | Reproduce musica  | `/music play <nombre de la cancion>` |
+### 🔧 Scripts Disponibles
 
+| Comando | Descripción |
+|:--------|:------------|
+| `npm run lavalink` | Inicia el servidor Lavalink (motor de audio) |
+| `npm run start` | Inicia el bot en modo producción |
+| `npm run dev` | Inicia el bot en modo desarrollo con recarga automática |
 
-## 🛠️ Tecnologías
-
-<div align="center">
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Discord.js](https://img.shields.io/badge/Discord.js-5865F2?style=for-the-badge&logo=discord&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-</div>
-- **Discord.js v14** - Librería principal para interactuar con la API de Discord
-- **Node.js** - Entorno de ejecución
-- **dotenv** - Gestión de variables de entorno
-- **ESLint** - Linting y formateo de código
-
-## 🎯 Roadmap
-
-- [x] Sistema básico de comandos
-- [x] Handler modular
-- [ ] Sistema de economía
-- [ ] Sistema de niveles y XP
-- [ ] Comandos de música
-- [ ] Dashboard web
-- [ ] Base de datos (MongoDB/PostgreSQL)
-- [ ] Sistema de tickets
-- [ ] Comandos personalizados por servidor
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Si deseas mejorar el bot:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/NuevaFuncionalidad`)
-3. Commit tus cambios (`git commit -m 'Add: Nueva funcionalidad'`)
-4. Push a la rama (`git push origin feature/NuevaFuncionalidad`)
-5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
-
-## 👨‍💻 Autor
-
-**Tu Nombre**
-
-- GitHub: [@brayanalmengor04](https://github.com/brayanalmengor04)
-- Discord:Brayan.DEV 8487#
+<br>
 
 ---
 
+<br>
+
+## 📋 Comandos
+
+### 🎧 Comandos de Música
+
+Disfruta de música de alta calidad con controles avanzados:
+
+<table>
+<tr>
+<th width="200">Comando</th>
+<th width="150">Subcomando</th>
+<th>Descripción</th>
+</tr>
+
+<tr>
+<td rowspan="10"><code>/music</code></td>
+<td><code>play</code></td>
+<td>▶️ Reproduce canciones, playlists o URLs (YouTube, Spotify, SoundCloud)</td>
+</tr>
+
+<tr>
+<td><code>pause</code></td>
+<td>⏸️ Pausa o reanuda la reproducción actual</td>
+</tr>
+
+<tr>
+<td><code>stop</code></td>
+<td>⏹️ Detiene la música completamente y limpia la cola</td>
+</tr>
+
+<tr>
+<td><code>skip</code></td>
+<td>⏭️ Salta a la siguiente canción en la cola</td>
+</tr>
+
+<tr>
+<td><code>queue</code></td>
+<td>📜 Muestra la cola de reproducción actual</td>
+</tr>
+
+<tr>
+<td><code>nowplaying</code></td>
+<td>🎶 Información detallada de la canción en reproducción</td>
+</tr>
+
+<tr>
+<td><code>volume</code></td>
+<td>🔊 Ajusta el volumen (0–200%)</td>
+</tr>
+
+<tr>
+<td><code>loop</code></td>
+<td>🔁 Modo de repetición: Canción / Cola / Desactivado</td>
+</tr>
+
+<tr>
+<td><code>shuffle</code></td>
+<td>🔀 Mezcla aleatoriamente las canciones en la cola</td>
+</tr>
+
+<tr>
+<td><code>clear</code></td>
+<td>🧹 Limpia todas las canciones de la cola</td>
+</tr>
+
+</table>
+
+<br>
+
+### 🛠️ Utilidades
+
+Herramientas esenciales para administrar y obtener información:
+
+| Comando | Descripción |
+|:--------|:------------|
+| `/userinfo` | 👤 Muestra información detallada de un usuario (fecha de creación, ingreso, badges) |
+| `/serverinfo` | 🏰 Estadísticas completas del servidor (miembros, canales, boosts, región) |
+| `/ping` | 🏓 Muestra la latencia del bot y el tiempo de respuesta de la API |
+
+<br>
+
+### 🛡️ Moderación
+
+Control efectivo para mantener tu servidor organizado:
+
+| Comando | Descripción |
+|:--------|:------------|
+| `/clear` | 🧹 Elimina múltiples mensajes de un canal (requiere permisos de moderador) |
+
+<br>
+
+---
+
+<br>
+
+## ✨ Características
+
 <div align="center">
-  
-  ### ⭐ Si te gusta el proyecto, no olvides darle una estrella
-  
-  Hecho con ❤️ y ☕ para la comunidad de Discord
-  
+
+| 🎵 Sistema de Música | 🛠️ Utilidades | 🔮 Tecnología |
+|:---------------------|:--------------|:--------------|
+| Audio de alta calidad | Comandos de información | Discord.js v14 |
+| Soporte multi-plataforma | Herramientas de moderación | Lavalink 4.0 |
+| Controles interactivos | Sistema extensible | Arquitectura modular |
+| Cola de reproducción | Fácil de usar | Node.js 18+ |
+
+</div>
+
+<br>
+
+---
+
+<br>
+
+##  Roadmap
+
+Nuestro plan para el futuro de Wasaby Bot:
+
+- ✅ **Sistema de Música Avanzado** - Integración completa con Lavalink
+- ✅ **Comandos de Información** - Userinfo, Serverinfo, Ping
+- ✅ **Comandos Slash** - Migración completa a Discord.js v14
+- 🚧 **Sistema de Niveles y XP** - Gamificación del servidor
+- 🚧 **Dashboard Web** - Panel de control con React
+- 📅 **Sistema de Configuración** - Personalización por servidor
+- 📅 **Comandos de Economía** - Sistema de monedas virtuales
+- 📅 **Auto-Moderación** - Filtros inteligentes y límites de spam
+
+<br>
+
+---
+
+<br>
+
+<div align="center">
+
+### 💜 Desarrollado con pasión
+
+<br>
+
+<img src="https://avatars.githubusercontent.com/u/112229331?v=4" width="100" height="100" style="border-radius: 50%; border: 3px solid #5865F2;" onerror="this.style.display='none'">
+
+**Brayan Almengor**
+
+[![GitHub](https://img.shields.io/badge/GitHub-brayanalmengor04-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brayanalmengor04)
+
+<br>
+
+---
+
+<br>
+
+⭐ **Si te gusta Wasaby Bot, dale una estrella al repositorio** ⭐
+
+<br>
+
+<sub>Hecho con ❤️ y ☕ • 2026</sub>
+
 </div>
